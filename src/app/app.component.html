@@ -1,21 +1,240 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" viewBox="0 0 512 512"
+        style="enable-background:new 0 0 512 512; width: 25px !important; height: 25px !important;"
+        xml:space="preserve">
+        <path style="fill:#1A91A1;" d="M255.999,512C397,512,512,397,512,255.999C512,115,397,0,255.999,0C115,0,0,115,0,255.999
+	C0,397,115,512,255.999,512z" />
+        <path style="fill:#FFFFFF;" d="M102.981,112.394h306.033c5.763,0,5.761,8.711,0,8.711H102.981
+	C97.22,121.105,97.218,112.394,102.981,112.394z" />
+        <path style="fill:#DFE1E3;" d="M413.049,118.389c-0.551,1.513-1.894,2.716-4.035,2.716H102.981c-2.141,0-3.486-1.202-4.037-2.716
+	H413.049z" />
+        <path style="fill:#FFFFFF;" d="M102.981,193.201h306.033c5.763,0,5.761,8.711,0,8.711H102.981
+	C97.22,201.912,97.218,193.201,102.981,193.201z" />
+        <path style="fill:#DFE1E3;" d="M413.049,199.196c-0.551,1.513-1.894,2.716-4.035,2.716H102.981c-2.141,0-3.486-1.204-4.037-2.716
+	H413.049z" />
+        <path style="fill:#FFFFFF;" d="M102.981,274.006h306.033c5.763,0,5.761,8.711,0,8.711H102.981
+	C97.22,282.717,97.218,274.006,102.981,274.006z" />
+        <path style="fill:#DFE1E3;" d="M413.049,280.001c-0.551,1.513-1.894,2.716-4.035,2.716H102.981c-2.141,0-3.486-1.204-4.037-2.716
+	H413.049z" />
+        <g>
+          <path style="fill:#FBB429;" d="M122.419,75.247c5.139,0,9.344,4.205,9.344,9.344V366.04h-18.69V84.591
+		c0-5.139,4.205-9.344,9.344-9.344H122.419z" />
+          <path style="fill:#FBB429;" d="M389.574,75.247c5.139,0,9.344,4.205,9.344,9.344V366.04h-18.69V84.591
+		c0-5.139,4.205-9.344,9.344-9.344H389.574z" />
+          <path style="fill:#FBB429;" d="M92.7,366.04h326.593c8.947,0,16.269,6.925,16.269,15.392v15.392H76.433v-15.392
+		c0-8.467,7.322-15.392,16.269-15.392H92.7z" />
+        </g>
+        <g>
+          <path style="fill:#F5A209;" d="M76.431,389.312h359.13v7.512H76.431V389.312z" />
+          <path style="fill:#F5A209;" d="M113.075,359.229h18.69v6.813h-18.69V359.229z" />
+          <path style="fill:#F5A209;" d="M380.23,359.229h18.69v6.813h-18.69V359.229z" />
+          <path style="fill:#F5A209;" d="M221.791,141.184c13.456,0,24.434-10.976,24.434-24.434c0-13.456-10.976-24.434-24.434-24.434
+		s-24.434,10.976-24.434,24.434S208.333,141.184,221.791,141.184z" />
+        </g>
+        <path style="fill:#FBB429;" d="M221.789,92.316c0.575,0,1.142,0.022,1.704,0.06c8.7,2.8,14.995,10.958,14.995,20.589
+	c0,11.941-9.681,21.625-21.627,21.625c-7.644,0-14.362-3.969-18.208-9.957c-0.842-2.474-1.299-5.124-1.299-7.882
+	C197.355,103.257,208.293,92.316,221.789,92.316z" />
+        <path style="fill:#F5A209;" d="M290.207,141.184c13.458,0,24.434-10.976,24.434-24.434c0-13.456-10.976-24.434-24.434-24.434
+	c-13.458,0-24.436,10.976-24.436,24.434S276.746,141.184,290.207,141.184z" />
+        <path style="fill:#FBB429;" d="M290.205,92.316c0.571,0,1.142,0.022,1.704,0.06c8.698,2.8,14.993,10.958,14.993,20.589
+	c0,11.941-9.681,21.625-21.623,21.625c-7.646,0-14.362-3.969-18.21-9.957c-0.842-2.474-1.299-5.124-1.299-7.882
+	c0-13.494,10.94-24.434,24.436-24.434H290.205z" />
+        <path style="fill:#EC4B53;" d="M174.766,302.797c13.458,0,24.436-10.976,24.436-24.436c0-13.458-10.976-24.434-24.436-24.434
+	c-13.458,0-24.434,10.976-24.434,24.434S161.308,302.797,174.766,302.797z" />
+        <path style="fill:#FF5B61;" d="M174.766,253.929c0.571,0,1.142,0.02,1.704,0.06c8.696,2.8,14.993,10.956,14.993,20.587
+	c0,11.941-9.681,21.625-21.623,21.625c-7.646,0-14.365-3.969-18.21-9.955c-0.842-2.474-1.299-5.126-1.299-7.884
+	c0-13.494,10.94-24.434,24.436-24.434L174.766,253.929z" />
+        <path style="fill:#EC4B53;" d="M228.921,302.797c13.458,0,24.434-10.976,24.434-24.436c0-13.458-10.976-24.434-24.434-24.434
+	s-24.436,10.976-24.436,24.434S215.461,302.797,228.921,302.797z" />
+        <path style="fill:#FF5B61;" d="M228.921,253.929c0.571,0,1.14,0.02,1.704,0.06c8.698,2.8,14.993,10.956,14.993,20.587
+	c0,11.941-9.681,21.625-21.625,21.625c-7.646,0-14.362-3.969-18.21-9.955c-0.842-2.474-1.299-5.126-1.299-7.884
+	c0-13.494,10.94-24.434,24.436-24.434V253.929z" />
+        <path style="fill:#EC4B53;" d="M283.076,302.797c13.456,0,24.434-10.976,24.434-24.436c0-13.458-10.976-24.434-24.434-24.434
+	c-13.458,0-24.436,10.976-24.436,24.434S269.618,302.797,283.076,302.797z" />
+        <path style="fill:#FF5B61;" d="M283.074,253.929c0.573,0,1.142,0.02,1.707,0.06c8.7,2.8,14.993,10.956,14.993,20.587
+	c0,11.941-9.681,21.625-21.625,21.625c-7.644,0-14.362-3.969-18.208-9.955c-0.842-2.474-1.299-5.126-1.299-7.884
+	c0-13.494,10.938-24.434,24.434-24.434L283.074,253.929z" />
+        <path style="fill:#EC4B53;" d="M337.232,302.797c13.456,0,24.434-10.976,24.434-24.436c0-13.458-10.976-24.434-24.434-24.434
+	s-24.434,10.976-24.434,24.434S323.773,302.797,337.232,302.797z" />
+        <path style="fill:#FF5B61;" d="M337.229,253.929c0.575,0,1.142,0.02,1.704,0.06c8.7,2.8,14.995,10.956,14.995,20.587
+	c0,11.941-9.681,21.625-21.627,21.625c-7.644,0-14.362-3.969-18.208-9.955c-0.842-2.474-1.299-5.126-1.299-7.884
+	c0-13.494,10.938-24.434,24.434-24.434V253.929z" />
+        <path style="fill:#15BDB1;" d="M206.148,221.989c13.458,0,24.436-10.976,24.436-24.434c0-13.458-10.978-24.434-24.436-24.434
+	c-13.458,0-24.434,10.976-24.434,24.434C181.714,211.011,192.689,221.989,206.148,221.989z" />
+        <path style="fill:#20D0C2;" d="M206.145,173.121c0.573,0,1.142,0.022,1.704,0.06c8.7,2.8,14.995,10.958,14.995,20.589
+	c0,11.944-9.684,21.625-21.627,21.625c-7.644,0-14.362-3.969-18.208-9.957c-0.842-2.474-1.301-5.122-1.301-7.88
+	c0-13.494,10.94-24.434,24.434-24.434L206.145,173.121z" />
+        <path style="fill:#15BDB1;" d="M259.866,221.989c13.458,0,24.434-10.976,24.434-24.434c0-13.458-10.976-24.434-24.434-24.434
+	s-24.436,10.976-24.436,24.434C235.43,211.011,246.408,221.989,259.866,221.989z" />
+        <path style="fill:#20D0C2;" d="M259.866,173.121c0.571,0,1.142,0.022,1.704,0.06c8.698,2.8,14.993,10.958,14.993,20.589
+	c0,11.944-9.681,21.625-21.623,21.625c-7.646,0-14.362-3.969-18.21-9.957c-0.842-2.474-1.299-5.122-1.299-7.88
+	c0-13.494,10.94-24.434,24.436-24.434L259.866,173.121z" />
+        <path style="fill:#15BDB1;" d="M313.585,221.989c13.458,0,24.436-10.976,24.436-24.434c0-13.458-10.978-24.434-24.436-24.434
+	s-24.434,10.976-24.434,24.434C289.151,211.011,300.126,221.989,313.585,221.989z" />
+        <path style="fill:#20D0C2;" d="M313.583,173.121c0.573,0,1.14,0.022,1.704,0.06c8.7,2.8,14.995,10.958,14.995,20.589
+	c0,11.944-9.684,21.625-21.625,21.625c-7.644,0-14.365-3.969-18.208-9.957c-0.842-2.474-1.299-5.122-1.299-7.88
+	c0-13.494,10.938-24.434,24.434-24.434L313.583,173.121z" />
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+      </svg>
+      <span class="ml-4">Temperaturas máximas</span>
+    </a>
+  </div>
+</nav>
 
-<router-outlet></router-outlet>
+
+<main role="main">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading" style="text-align: left !important;">Registro de temperaturas <span
+          class="text-muted" style="font-size: 1rem;">Da click en las celdas para modificar la temperatura.</span></h1>
+      <p-table [value]="semanas">
+        <ng-template pTemplate="header">
+          <tr>
+            <th *ngFor="let col of cols">
+              {{col.header}}
+            </th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData>
+          <tr>
+            <td style="background:#f4f4f4; font-weight: bold;">
+              {{rowData.semana}}
+            </td>
+            <td pEditableColumn>
+              <p-cellEditor>
+                <ng-template pTemplate="input">
+                  <input pInputText type="number" [(ngModel)]="rowData.lunes" required>
+                </ng-template>
+                <ng-template pTemplate="output">
+                  {{rowData.lunes}}
+                </ng-template>
+              </p-cellEditor>
+            </td>
+            <td pEditableColumn>
+              <p-cellEditor>
+                <ng-template pTemplate="input">
+                  <input pInputText type="number" [(ngModel)]="rowData.martes" required>
+                </ng-template>
+                <ng-template pTemplate="output">
+                  {{rowData.martes}}
+                </ng-template>
+              </p-cellEditor>
+            </td>
+            <td pEditableColumn>
+              <p-cellEditor>
+                <ng-template pTemplate="input">
+                  <input pInputText type="number" [(ngModel)]="rowData.miercoles" required>
+                </ng-template>
+                <ng-template pTemplate="output">
+                  {{rowData.miercoles}}
+                </ng-template>
+              </p-cellEditor>
+            </td>
+            <td pEditableColumn>
+              <p-cellEditor>
+                <ng-template pTemplate="input">
+                  <input pInputText type="number" [(ngModel)]="rowData.jueves" required>
+                </ng-template>
+                <ng-template pTemplate="output">
+                  {{rowData.jueves}}
+                </ng-template>
+              </p-cellEditor>
+            </td>
+            <td pEditableColumn>
+              <p-cellEditor>
+                <ng-template pTemplate="input">
+                  <input pInputText type="number" [(ngModel)]="rowData.viernes" required>
+                </ng-template>
+                <ng-template pTemplate="output">
+                  {{rowData.viernes}}
+                </ng-template>
+              </p-cellEditor>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+      <button type="button" class="btn btn-block btn-outline-primary my-4" (click)="calcular()">Calcular</button>
+    </div>
+  </section>
+  <section>
+    <div class="container my-4 py-4">
+      <h1>Tabulación de datos</h1>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Xi</th>
+            <th scope="col">fi</th>
+            <th scope="col">hi</th>
+            <th scope="col">hi%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rowData of temperaturaCount">
+            <td>
+              {{rowData.xi}}
+            </td>
+            <td>
+              {{rowData.fi}}
+            </td>
+            <td>
+              {{rowData.hi}}
+            </td>
+            <td>
+              {{rowData.hiP}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section style="background: #e9ecef;">
+    <div class="container my-4 py-4">
+      <h1 class="mt-4">Temperaturas máximas</h1>
+      <p-chart type="pie" [data]="dataChart" [options]="optionsChart"></p-chart>
+    </div>
+  </section>
+
+
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Subir</a>
+    </p>
+    <p>Alejandro Martínez Limon</p>
+  </div>
+</footer>
